@@ -26,18 +26,22 @@ $ echo "deb https://apt.dockerproject.org/repo ubuntu-xenial main" | sudo tee /e
 sudo apt-get update
 
 # For Ubuntu Trusty, and Xenial, it?s recommended to install the linux-image-extra-* kernel packages
+#  On Mint install linux-image-generic will install linux-image-extra-4.4.0-45-generic (see https://community.linuxmint.com/software/view/linux-image-extra-virtual)
 
-$ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+
+sudo apt-get install -y linux-image-generic linux-image-extra-virtual
+#remove all old package
+sudo apt autoremove -y
 
 #Install docker
 sudo apt-get update
-sudo apt-get install docker.io
+sudo apt-get install -y docker.io
 
 #Add current user to docker group (don't use sudo to execute docker)
 
 sudo usermod -a -G docker $USER
 
 #start docker and verify all is installed correctly
-$ sudo service docker start
+sudo service docker start
 
-$ sudo docker run hello-world
+sudo docker run hello-world
