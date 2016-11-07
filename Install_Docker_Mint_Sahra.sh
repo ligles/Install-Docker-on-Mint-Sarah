@@ -31,7 +31,7 @@ $ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 
 #Install docker
 sudo apt-get update
-sudo apt-get install docker-engine
+sudo apt-get install docker.io
 
 #Add current user to docker group (don't use sudo to execute docker)
 
