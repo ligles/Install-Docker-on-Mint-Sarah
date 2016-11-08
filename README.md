@@ -10,7 +10,7 @@ execute the script
 At the end of the installation you should see the message 
 
 <i>
-Hello from Docker!
+Hello from Docker!<br>
 This message shows that your installation appears to be working correctly.
 
 To generate this message, Docker took the following steps:
