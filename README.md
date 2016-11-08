@@ -1,11 +1,11 @@
 # Install-Docker-on-Mint-Sarah
 
 Copy the file <b>Install-Docker-on-Mint-Sarah.sh</b> anywhere on your pc <br>
-make it executable 
-sudo chmod +x Install-Docker-on-Mint-Sarah.sh
+make it executable <br> 
+sudo chmod +x Install-Docker-on-Mint-Sarah.sh <br>
 
-execute the script
-./Install-Docker-on-Mint-Sarah.sh
+execute the script <br>
+./Install-Docker-on-Mint-Sarah.sh <br>
 
 At the end of the installation you should see the message 
 
